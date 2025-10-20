@@ -111,7 +111,7 @@ the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Lice
 As shown above, the number of images of train and valid datasets is not enough to use for a training set of our segmentation model.
 <br><br>
 <h3>2.2 ImageMask Dataset Generation</h3>
-The folder struction of the original <b>mvtec_anomaly_detection</b> is the following.<br>
+The folder structure of the original <b>mvtec_anomaly_detection</b> is the following.<br>
 <pre>
 ./mvtec_anomaly_detection
 ├─bottle
