@@ -152,7 +152,7 @@ and images in <b>test</b> folders of <b>screw</b> dataset.
     └─good</pre>
 <br>
 <br>
-<h3>2.3 Tran Images and Masks Sample </h3>
+<h3>2.3 Train Images and Masks Sample </h3>
 <b>Train_images_sample</b><br>
 <img src="./projects/TensorFlowFlexUNet/MVTEC-SCREW/asset/train_images_sample.png" width="1024" height="auto">
 <br>
@@ -161,7 +161,7 @@ and images in <b>test</b> folders of <b>screw</b> dataset.
 <br>
 <br>
 <h3>
-3 Train TensorFlowUNet Model
+3 Train TensorFlowFlexUNet Model
 </h3>
  We have trained MVTEC-SCREW TensorFlowUNet Model by using the following
 <a href="./projects/TensorFlowFlexUNet/MVTEC-SCREW/train_eval_infer.config"> <b>train_eval_infer.config</b></a> file. <br>
@@ -287,7 +287,7 @@ In this experiment, the training process was stopped at epoch 55 by EarlyStoppin
 4 Evaluation
 </h3>
 Please move to a <b>./projects/TensorFlowFlexUNet/MVTEC-SCREW</b> folder,<br>
-and run the following bat file to evaluate TensorFlowUNet model for MVTEC-SCREW.<br>
+and run the following bat file to evaluate TensorFlowFlexUNet model for MVTEC-SCREW.<br>
 <pre>
 ./2.evaluate.bat
 </pre>
@@ -313,7 +313,7 @@ dice_coef_multiclass,0.9985
 5 Inference
 </h3>
 Please move to a <b>./projects/TensorFlowFlexUNet/MVTEC-SCREW</b> folder<br>
-,and run the following bat file to infer segmentation regions for images by the Trained-TensorFlowUNet model for MVTEC-SCREW.<br>
+,and run the following bat file to infer segmentation regions for images by the Trained-TensorFlowFlexUNet model for MVTEC-SCREW.<br>
 <pre>
 ./3.infer.bat
 </pre>
@@ -334,7 +334,7 @@ python ../../../src/TensorFlowFlexUNetInferencer.py ./train_eval_infer.config
 <br>
 <hr>
 <b>Enlarged images and masks for Images of 512x512 pixels </b><br>
-<b>rgb_map (bent:green, broken:red, glue: yellow   contamination:gray, thread:cyan)</b> <br>
+<b>rgb_map ((manipulated_front:green, scratch_head:red, scratch_neck:blue, thread_side:cyan, thread_top:yellow))</b> <br>
 As shown below, this model was able to detect abnormal regions in <b>screw</b> mini_test images, but failed to
 segment abnormal areas in some cases such as thread_side (cyan) and thread_top (yellow).
 <table>
