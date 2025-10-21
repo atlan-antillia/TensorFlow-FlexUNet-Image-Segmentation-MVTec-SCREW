@@ -150,6 +150,7 @@ and images in <b>test</b> folders of <b>screw</b> dataset.
 │  └─thread_top
 └─train
     └─good
+</pre>
 <br>
 <br>
 <h3>2.3 Train Images and Masks Sample </h3>
