@@ -118,7 +118,7 @@ The folder structure of the original <b>mvtec_anomaly_detection</b> is the follo
 ├─cable
 ├─capsule
 ├─carpet
-├─SCREW
+├─grid
 ├─hazelnut
 ├─leather
 ├─metal_nut
@@ -136,20 +136,20 @@ and images in <b>test</b> folders of <b>screw</b> dataset.
 <pre>
 ./screw
 ├─ground_truth
-│  ├─bent
-│  ├─broken
-│  ├─glue
-│  ├─metal_contamination
-│  └─thread
+│  ├─manipulated_front
+│  ├─scratch_head
+│  ├─scratch_neck
+│  ├─thread_side
+│  └─thread_top
 ├─test
-│  ├─bent
-│  ├─broken
-│  ├─glue
 │  ├─good
-│  ├─metal_contamination
-│  └─thread
+│  ├─manipulated_front
+│  ├─scratch_head
+│  ├─scratch_neck
+│  ├─thread_side
+│  └─thread_top
 └─train
-    └─good</pre>
+    └─good
 <br>
 <br>
 <h3>2.3 Train Images and Masks Sample </h3>
